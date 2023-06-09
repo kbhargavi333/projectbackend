@@ -15,7 +15,7 @@ mongoose.connect("mongodb+srv://bhargavi:bhargavi@cluster0.1wmv1gi.mongodb.net/f
 .catch((err)=>{
     console.log(err)
 })
-app.get("/example",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("Hello")
 })
 app.use(cors())
